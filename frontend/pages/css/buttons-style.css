@@ -1,0 +1,22 @@
+button.register-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #218555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+button.register-button:hover {
+  background-color: #24915c;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+}
