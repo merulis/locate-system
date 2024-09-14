@@ -4,7 +4,7 @@ import paho.mqtt.client as mqtt
 
 from .mqtt_config import Config as c
 from .position_handler import add_position_from_mqtt
-from init import app
+from main import app
 
 
 def on_connect(client: mqtt.Client, userdata, flags, reason_code, properties):

@@ -1,15 +1,14 @@
 from datetime import datetime
 from sqlalchemy import func, and_
 from flask import jsonify, request
-from init import app, db
-from app import models as m
+from main import app, db
+from main import models as m
 
 from flask_jwt_extended import (
     create_access_token,
     create_refresh_token,
     jwt_required,
     get_jwt_identity,
-    unset_jwt_cookies,
 )
 
 
@@ -39,7 +38,6 @@ def get_all_last_position():
     )
 
     json_position = list(map(lambda x: x.to_json(), positions))
-    print(f"### DATA: {json_position} ###")
     return json_position
 
 

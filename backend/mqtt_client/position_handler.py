@@ -1,5 +1,5 @@
 import datetime
-from app import models as m
+from main import models as m
 
 
 def add_position_from_mqtt(id_mqtt, message):
